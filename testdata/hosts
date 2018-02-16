@@ -1,0 +1,25 @@
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1	localhost
+255.255.255.255	broadcasthost
+::1             localhost 
+fe80::1%lo0	localhost
+192.168.10.10 truva.pro
+192.168.10.10 homestead.app
+
+# Required for running W3C platform Tests
+# See:
+#	https://github.com/w3c/web-platform-tests
+#
+127.0.0.1   web-platform.test
+127.0.0.1   www.web-platform.test
+127.0.0.1   www1.web-platform.test
+127.0.0.1   www2.web-platform.test
+127.0.0.1   xn--n8j6ds53lwwkrqhv28a.web-platform.test
+127.0.0.1   xn--lve-6lad.web-platform.test
+0.0.0.0     nonexistent-origin.web-platform.test
+
