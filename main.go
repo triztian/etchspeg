@@ -55,6 +55,12 @@ func main() {
 		os.Exit(1)
 	}
 
-	hlns := h.(ASTHosts)
+	hlns, ok := h.(ASTHosts)
+	if !ok {
+		log.Fatal("nil")
+	}
+
+	log.Print("String: ", hlns.String())
+
 	log.Printf("Hostlines: %T\n\n%v\n", hlns, hlns.StringWOComments())
 }

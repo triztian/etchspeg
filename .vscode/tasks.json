@@ -9,7 +9,8 @@
 			"command": "make",
 			"args": [
 				"run"
-			]
+			],
+			"problemMatcher": []
 		}
 	]
 }

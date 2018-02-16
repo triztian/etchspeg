@@ -1,0 +1,3 @@
+package: github.com/Triztian/etchspeg
+import: 
+- package: github.com/fatih/color
