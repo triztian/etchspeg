@@ -49,11 +49,12 @@ func toASTHostLineSlice(v interface{}) []ASTHostLine {
 func main() {
 	log.Println("Parsing hosts")
 	h, err := ParseFile("host")
-	hlns := h.(ASTHosts)
 
 	if err != nil {
 		log.Println("Got Error:", err)
 		os.Exit(1)
 	}
+
+	hlns := h.(ASTHosts)
 	log.Printf("Hostlines: %T\n\n%v\n", hlns, hlns.StringWOComments())
 }
