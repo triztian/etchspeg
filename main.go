@@ -3,6 +3,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"os"
 )
@@ -60,7 +61,17 @@ func main() {
 		log.Fatal("nil")
 	}
 
-	log.Print("String: ", hlns.String())
+	for _, hl := range hlns {
+		fmt.Printf("%s", hl.String())
 
-	log.Printf("Hostlines: %T\n\n%v\n", hlns, hlns.StringWOComments())
+		// NOTE: it is also doable via type switch,
+		// however let the entity that's being printed be
+		// in charge of it's representation
+
+		// switch hlClass := hl.(type) {
+		// case ASTComment:
+
+		// case ASTHost:
+		// }
+	}
 }
